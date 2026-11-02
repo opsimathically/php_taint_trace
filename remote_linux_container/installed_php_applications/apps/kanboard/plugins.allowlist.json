@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "GithubAuth", "url": "https://github.com/kanboard/plugin-github-auth/releases", "type": "reference" },
+    { "name": "Slack", "url": "https://github.com/kanboard/plugin-slack", "type": "reference" },
+    { "name": "OAuth2", "url": "https://github.com/kanboard/plugin-oauth2", "type": "reference" }
+  ]
+}

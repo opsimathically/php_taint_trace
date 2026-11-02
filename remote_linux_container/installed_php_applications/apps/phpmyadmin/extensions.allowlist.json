@@ -1,0 +1,59 @@
+{
+  "extensions": [
+    {
+      "type": "theme",
+      "name": "metro",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "metro"
+    },
+    {
+      "type": "theme",
+      "name": "material",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "material"
+    },
+    {
+      "type": "theme",
+      "name": "boodark",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "boodark"
+    },
+    {
+      "type": "theme",
+      "name": "silkline",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "silkline"
+    },
+    {
+      "type": "theme",
+      "name": "vision",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "vision"
+    },
+    {
+      "type": "theme",
+      "name": "pmahomme-dark",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "pmahomme-dark"
+    },
+    {
+      "type": "theme",
+      "name": "startrack",
+      "url": "https://github.com/phpmyadmin/themes.git",
+      "branch": "master",
+      "subdir": "startrack"
+    },
+    {
+      "type": "plugin",
+      "name": "error-report",
+      "url": "https://github.com/phpmyadmin/error-report.git",
+      "branch": "master"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "modules": [
+    { "module": "ps_contactinfo", "git_url": "https://github.com/PrestaShop/ps_contactinfo.git", "branch": "main" },
+    { "module": "ps_emailalerts", "git_url": "https://github.com/PrestaShop/ps_emailalerts.git", "branch": "main" },
+    { "module": "ps_languageselector", "git_url": "https://github.com/PrestaShop/ps_languageselector.git", "branch": "main" },
+    { "module": "ps_mainmenu", "git_url": "https://github.com/PrestaShop/ps_mainmenu.git", "branch": "main" },
+    { "module": "ps_shoppingcart", "git_url": "https://github.com/PrestaShop/ps_shoppingcart.git", "branch": "main" },
+    { "module": "blockwishlist", "git_url": "https://github.com/PrestaShop/blockwishlist.git", "branch": "main" },
+    { "module": "ps_wirepayment", "git_url": "https://github.com/PrestaShop/ps_wirepayment.git", "branch": "main" },
+    { "module": "ps_checkpayment", "git_url": "https://github.com/PrestaShop/ps_checkpayment.git", "branch": "main" }
+  ]
+}

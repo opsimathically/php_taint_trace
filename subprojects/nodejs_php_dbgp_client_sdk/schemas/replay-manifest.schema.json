@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Replay Artifact Manifest",
+  "type": "object",
+  "required": ["schema", "createdAt", "entries"],
+  "properties": {
+    "schema": { "type": "string", "const": "dbgp-replay-manifest.v1" },
+    "createdAt": { "type": "string" },
+    "signature": {
+      "type": "object",
+      "required": ["algorithm", "digest"],
+      "properties": {
+        "algorithm": { "type": "string", "const": "hmac-sha256" },
+        "digest": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "keyId": { "type": "string" }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["kind", "path", "sha256", "size"],
+        "properties": {
+          "kind": { "type": "string" },
+          "path": { "type": "string" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "size": { "type": "integer", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

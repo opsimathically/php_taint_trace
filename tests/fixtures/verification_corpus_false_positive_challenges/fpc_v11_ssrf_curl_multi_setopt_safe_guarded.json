@@ -1,0 +1,30 @@
+{
+  "scenario_id": "fpc_v11_ssrf_curl_multi_setopt_safe_guarded",
+  "corpus_phase": "false_positive_challenge_v11",
+  "category": "ssrf",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_SSRF_WEAK_DIFFERENTIAL"
+  ],
+  "endpoint": "/ssrf_curl_multi_setopt_safe?url=http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi",
+  "payload_plan": {
+    "target_query_param": "url"
+  },
+  "requires_extensions": [
+    "curl"
+  ],
+  "requires_functions": [
+    "curl_init",
+    "curl_setopt",
+    "curl_multi_init",
+    "curl_multi_add_handle",
+    "curl_multi_exec",
+    "curl_multi_getcontent"
+  ],
+  "expected_sink_names_any": [
+    "curl_multi_exec"
+  ]
+}

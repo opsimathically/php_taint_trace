@@ -1,0 +1,19 @@
+{
+  "runtime": {
+    "enabled": true,
+    "findings_file": "/var/lib/php_taint_trace/findings.jsonl",
+    "error_log": true,
+    "clear_after_flush": true,
+    "emit_candidates": false,
+    "enable_opcode_hooks": false,
+    "opcode_hook_profile": "safe",
+    "enable_verifier": false,
+    "verifier_runtime_dir": "/var/lib/php_taint_trace/verifier",
+    "verifier_replay_target": "local",
+    "reporting_backend": "jsonl",
+    "reporting_dsn": null,
+    "reporting_username": null,
+    "reporting_password": null,
+    "reporting_table": "php_taint_trace_request_reports"
+  }
+}

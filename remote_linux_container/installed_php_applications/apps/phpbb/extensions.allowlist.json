@@ -1,0 +1,12 @@
+{
+  "extensions": [
+    { "ext_name": "phpbb/boardrules", "git_url": "https://github.com/phpbb-extensions/boardrules.git", "branch": "master" },
+    { "ext_name": "phpbb/mentions", "git_url": "https://github.com/phpbb-extensions/mentions.git", "branch": "master" },
+    { "ext_name": "phpbb/profileviews", "git_url": "https://github.com/phpbb-extensions/profileviews.git", "branch": "master" },
+    { "ext_name": "phpbb/quickreply", "git_url": "https://github.com/phpbb-extensions/quickreply.git", "branch": "master" },
+    { "ext_name": "phpbb/sitesplat", "git_url": "https://github.com/phpbb-extensions/sitesplat.git", "branch": "master" },
+    { "ext_name": "phpbb/tapatalk", "git_url": "https://github.com/phpbb-extensions/tapatalk.git", "branch": "master" },
+    { "ext_name": "phpbb/viglink", "git_url": "https://github.com/phpbb-extensions/viglink.git", "branch": "master" },
+    { "ext_name": "phpbb/vote", "git_url": "https://github.com/phpbb-extensions/vote.git", "branch": "master" }
+  ]
+}

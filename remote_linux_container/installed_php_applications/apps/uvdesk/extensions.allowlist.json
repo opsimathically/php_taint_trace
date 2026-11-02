@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "uvdesk/api-bundle", "version_constraint": "*", "type": "composer-package" },
+    { "name": "uvdesk/automation-bundle", "version_constraint": "*", "type": "composer-package" },
+    { "name": "uvdesk/mailbox-component", "version_constraint": "*", "type": "composer-package" }
+  ]
+}

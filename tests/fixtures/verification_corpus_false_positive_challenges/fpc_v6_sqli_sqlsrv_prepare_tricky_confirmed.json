@@ -1,0 +1,19 @@
+{
+  "scenario_id": "fpc_v6_sqli_sqlsrv_prepare_tricky_confirmed",
+  "corpus_phase": "false_positive_challenge_v6",
+  "category": "sqli",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_SQLI_UNION_CONFIRMED"
+  ],
+  "endpoint": "/sqli_sqlsrv_prepare?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_functions": [
+    "sqlsrv_prepare"
+  ]
+}

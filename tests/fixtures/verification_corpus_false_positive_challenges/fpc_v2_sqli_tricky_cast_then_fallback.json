@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_v2_sqli_tricky_cast_then_fallback",
+  "corpus_phase": "false_positive_challenge_v2",
+  "category": "sqli",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_SQLI_UNION_CONFIRMED"
+  ],
+  "endpoint": "/sqli_tricky_cast_then_fallback?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  }
+}
+

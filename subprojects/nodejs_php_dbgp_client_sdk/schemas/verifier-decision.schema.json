@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Verifier Decision Payload",
+  "type": "object",
+  "required": [
+    "job_id",
+    "candidate_id",
+    "outcome",
+    "reason_codes",
+    "summary",
+    "artifacts",
+    "replay_transcripts",
+    "created_at",
+    "metadata"
+  ],
+  "properties": {
+    "job_id": { "type": "string" },
+    "candidate_id": { "type": "string" },
+    "outcome": {
+      "type": "string",
+      "enum": ["confirmed", "not_confirmed", "inconclusive", "blocked_by_policy", "replay_failed"]
+    },
+    "reason_codes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "summary": { "type": "string" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "path", "metadata"],
+        "properties": {
+          "type": { "type": "string" },
+          "path": { "type": "string" },
+          "metadata": { "type": "object" }
+        }
+      }
+    },
+    "replay_transcripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "attempt",
+          "status",
+          "failure_code",
+          "replay_variation_count",
+          "replay_error_count"
+        ],
+        "properties": {
+          "attempt": { "type": "integer", "minimum": 1 },
+          "status": { "type": "string", "enum": ["succeeded", "failed"] },
+          "failure_code": { "type": "string" },
+          "failure_message": { "type": "string" },
+          "session_id": { "type": "string" },
+          "replay_variation_count": { "type": "integer", "minimum": 0 },
+          "replay_error_count": { "type": "integer", "minimum": 0 },
+          "artifacts": {
+            "type": "object",
+            "properties": {
+              "evidencePath": { "type": "string" },
+              "replayResultsPath": { "type": "string" },
+              "transcriptPath": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "created_at": { "type": "string" },
+    "metadata": { "type": "object" }
+  }
+}

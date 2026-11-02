@@ -1,0 +1,115 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Replay Results Artifact",
+  "type": "object",
+  "required": ["ok", "rounds", "totalRuns", "stabilityReport", "data", "roundResults"],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "rounds": { "type": "integer", "minimum": 1 },
+    "totalRuns": { "type": "integer", "minimum": 0 },
+    "stabilityReport": {
+      "type": "object",
+      "required": ["rounds", "totalSamples", "overallStabilityScore", "variationScores"],
+      "properties": {
+        "rounds": { "type": "integer", "minimum": 1 },
+        "totalSamples": { "type": "integer", "minimum": 0 },
+        "overallStabilityScore": { "type": "number", "minimum": 0, "maximum": 1 },
+        "variationScores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["variationId", "samples", "stableSamples", "driftSamples", "errorSamples", "stabilityScore"],
+            "properties": {
+              "variationId": { "type": "string" },
+              "samples": { "type": "integer", "minimum": 0 },
+              "stableSamples": { "type": "integer", "minimum": 0 },
+              "driftSamples": { "type": "integer", "minimum": 0 },
+              "errorSamples": { "type": "integer", "minimum": 0 },
+              "stabilityScore": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        }
+      }
+    },
+    "data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["variation", "result", "sessionId"],
+        "properties": {
+          "variation": {
+            "type": "object",
+            "required": ["id"],
+            "properties": {
+              "id": { "type": "string" }
+            }
+          },
+          "result": {
+            "type": "object",
+            "required": ["variation", "evalResults", "errors"],
+            "properties": {
+              "variation": {
+                "type": "object",
+                "required": ["id"],
+                "properties": {
+                  "id": { "type": "string" }
+                }
+              },
+              "evalResults": { "type": "object" },
+              "errors": {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            }
+          },
+          "sessionId": { "type": "string" }
+        }
+      }
+    },
+    "roundResults": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["round", "results"],
+        "properties": {
+          "round": { "type": "integer", "minimum": 1 },
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["variation", "result", "sessionId"],
+              "properties": {
+                "variation": {
+                  "type": "object",
+                  "required": ["id"],
+                  "properties": {
+                    "id": { "type": "string" }
+                  }
+                },
+                "result": {
+                  "type": "object",
+                  "required": ["variation", "evalResults", "errors"],
+                  "properties": {
+                    "variation": {
+                      "type": "object",
+                      "required": ["id"],
+                      "properties": {
+                        "id": { "type": "string" }
+                      }
+                    },
+                    "evalResults": { "type": "object" },
+                    "errors": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    }
+                  }
+                },
+                "sessionId": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extensions": [
+    { "slug": "AbuseFilter", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/AbuseFilter.git", "branch": "master" },
+    { "slug": "ConfirmEdit", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/ConfirmEdit.git", "branch": "master" },
+    { "slug": "Cite", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Cite.git", "branch": "master" },
+    { "slug": "ParserFunctions", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/ParserFunctions.git", "branch": "master" },
+    { "slug": "Gadgets", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets.git", "branch": "master" },
+    { "slug": "WikiEditor", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiEditor.git", "branch": "master" },
+    { "slug": "CodeEditor", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeEditor.git", "branch": "master" },
+    { "slug": "ImageMap", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/ImageMap.git", "branch": "master" },
+    { "slug": "InputBox", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/InputBox.git", "branch": "master" },
+    { "slug": "Nuke", "git_url": "https://gerrit.wikimedia.org/r/mediawiki/extensions/Nuke.git", "branch": "master" }
+  ]
+}

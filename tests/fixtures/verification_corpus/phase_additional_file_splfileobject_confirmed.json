@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_file_splfileobject_confirmed",
+  "corpus_phase": "additional_sinks_v1",
+  "category": "file",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/file_spl_vuln?path=%2Fetc%2Fhostname",
+  "payload_plan": {
+    "target_query_param": "path"
+  }
+}

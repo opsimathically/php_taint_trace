@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "bagisto/rest-api", "version_constraint": "*", "type": "api" },
+    { "name": "bagisto/graphql-api", "version_constraint": "*", "type": "api" },
+    { "name": "bagisto/bagisto-package-generator", "version_constraint": "*", "type": "developer-tool" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_rce_popen_safe",
+  "corpus_phase": "additional_sinks_v13",
+  "category": "rce",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/rce_popen_safe?cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "modules": [
+    { "module": "suitep_icon_font", "git_url": "https://github.com/salesagility/SuiteP-Icon-Font.git", "branch": "master", "target": "public/legacy/custom/extensions/suitep_icon_font" },
+    { "module": "seven_sms", "git_url": "https://github.com/seven-io/SuiteCRM.git", "branch": "master", "target": "public/legacy/custom/extensions/seven_sms" },
+    { "module": "suitecrm_portal_joomla", "git_url": "https://github.com/salesagility/SuiteCRM-Portal-Joomla.git", "branch": "master", "target": "public/legacy/custom/extensions/suitecrm_portal_joomla" },
+    { "module": "suitecrm_core_sample_1", "git_url": "https://github.com/salesagility/SuiteCRM-Core.git", "branch": "master", "target": "public/legacy/custom/extensions/suitecrm_core_sample_1" },
+    { "module": "suitecrm_core_sample_2", "git_url": "https://github.com/SuiteCRM/SuiteCRM-Core.git", "branch": "master", "target": "public/legacy/custom/extensions/suitecrm_core_sample_2" }
+  ]
+}

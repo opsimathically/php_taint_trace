@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_rce_passthru_confirmed",
+  "corpus_phase": "additional_sinks_v13",
+  "category": "rce",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/rce_passthru?cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}

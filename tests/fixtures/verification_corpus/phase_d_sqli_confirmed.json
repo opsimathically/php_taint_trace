@@ -1,0 +1,12 @@
+{
+  "scenario_id": "phase_d_sqli_confirmed",
+  "category": "sqli",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/sqli?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  }
+}

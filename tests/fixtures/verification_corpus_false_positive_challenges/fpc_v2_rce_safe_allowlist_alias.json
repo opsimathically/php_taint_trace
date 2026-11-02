@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_v2_rce_safe_allowlist_alias",
+  "corpus_phase": "false_positive_challenge_v2",
+  "category": "rce",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_RCE_WEAK_DIFFERENTIAL"
+  ],
+  "endpoint": "/rce_fp_allowlist_alias?cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}
+

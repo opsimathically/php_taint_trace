@@ -1,0 +1,53 @@
+{
+    "baseline_version": "step35_track4_v2_additional_sinks_p3g",
+    "formula_version_distribution": {
+        "phase_c_v1_step27": 44
+    },
+    "decision_tier_distribution": {
+        "confirmed": 22,
+        "invalid": 22
+    },
+    "replay": {
+        "total_results": 44,
+        "replay_failed_count": 0,
+        "replay_failure_rate": 0.0
+    },
+    "queue": {
+        "dead_letter_count": 0,
+        "dead_letter_rate": 0.0
+    },
+    "browser_xss_probe": {
+        "xss_confirmed_decisions": 1,
+        "browser_reason_present_count": 0,
+        "execution_confirmed_count": 0,
+        "failure_count": 0,
+        "unconfigured_count": 0,
+        "browser_reason_present_rate": 0.0,
+        "execution_confirmed_rate": 0.0,
+        "failure_rate": 0.0,
+        "unconfigured_rate": 0.0
+    },
+    "reason_code_distribution": {
+        "DECISION_TIER_CONFIRMED_THRESHOLD_MET": 22,
+        "DECISION_TIER_INVALID_NOT_CONFIRMED": 22,
+        "DETECTOR_TAINT_INPUT": 44,
+        "VERIFIER_FILE_AMBIGUOUS_CONTROL_SIGNAL": 2,
+        "VERIFIER_FILE_DIFFERENTIAL_CONFIRMED": 2,
+        "VERIFIER_IDOR_AMBIGUOUS_CONTROL_SIGNAL": 1,
+        "VERIFIER_IDOR_DIFFERENTIAL_CONFIRMED": 1,
+        "VERIFIER_RCE_CONTROL_MISMATCH": 2,
+        "VERIFIER_RCE_NONCE_CONFIRMED": 2,
+        "VERIFIER_RCE_WEAK_DIFFERENTIAL": 2,
+        "VERIFIER_SQLI_CONTROL_MISMATCH": 2,
+        "VERIFIER_SQLI_UNION_CONFIRMED": 2,
+        "VERIFIER_SQLI_WEAK_DIFFERENTIAL": 2,
+        "VERIFIER_SSRF_CALLBACK_CONFIRMED": 9,
+        "VERIFIER_SSRF_CONTROL_MISMATCH": 9,
+        "VERIFIER_SSRF_WEAK_DIFFERENTIAL": 9,
+        "VERIFIER_XSS_CONTEXT_CONFIRMED": 1,
+        "VERIFIER_XSS_NORMALIZATION_AMBIGUITY": 1,
+        "VERIFIER_XXE_CONTROL_MISMATCH": 5,
+        "VERIFIER_XXE_ENTITY_RESOLUTION_CONFIRMED": 5,
+        "VERIFIER_XXE_WEAK_DIFFERENTIAL": 5
+    }
+}

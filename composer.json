@@ -1,0 +1,48 @@
+{
+  "name": "php-taint-trace/rewrite",
+  "description": "Ground-up PHP taint tracing and runtime security analysis rewrite.",
+  "type": "project",
+  "license": "MIT",
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpTaintTrace\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PhpTaintTrace\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit -c phpunit.xml --testdox",
+    "lint": "find src tests -name '*.php' -print0 | xargs -0 -n1 php -l",
+    "smoke:native-auto-prepend": "bash scripts/run_native_auto_prepend_smoke.sh",
+    "smoke:native-opcache": "bash scripts/run_native_opcache_smoke.sh",
+    "verifier:worker": "php scripts/run_verifier_worker.php",
+    "smoke:remote-verifier": "bash scripts/run_remote_verifier_tests.sh",
+    "smoke:remote-verifier:browser-canary": "bash scripts/run_remote_browser_xss_canary.sh",
+    "soak:remote-verifier:browser-canary": "bash scripts/run_remote_browser_xss_soak.sh",
+    "corpus:local-verifier": "bash scripts/run_local_verifier_corpus.sh",
+    "corpus:false-positive-challenges": "bash scripts/run_false_positive_challenge_tests.sh",
+    "corpus:false-positive-matrix": "bash scripts/run_false_positive_matrix_tests.sh",
+    "metrics:verification": "bash scripts/report_verification_metrics.sh",
+    "metrics:verification:gate": "bash scripts/report_verification_metrics.sh --fail-on-unexpected-confirmed --expected-formula-version phase_c_v1_step27 --fail-on-formula-version-drift --baseline tests/fixtures/verification_metrics_baseline.json --fail-on-drift",
+    "config:install:runtime": "bash scripts/install_runtime_config.sh",
+    "config:install:verifier": "bash scripts/install_verifier_config.sh",
+    "remote:prepare-browser-probe": "bash scripts/prepare_remote_browser_probe.sh",
+    "verifier:dead-letters:summary": "php scripts/requeue_verifier_dead_letters.php --summary-only",
+    "verifier:dead-letters:requeue": "php scripts/requeue_verifier_dead_letters.php",
+    "verifier:dead-letters:recover": "bash scripts/run_dead_letter_recovery_cycle.sh",
+    "verifier:dead-letters:recover:remote": "bash scripts/run_remote_dead_letter_recovery_cycle.sh",
+    "verifier:dead-letters:campaign:remote": "bash scripts/run_remote_dead_letter_recovery_campaign.sh",
+    "soak:native": "bash scripts/run_native_soak_smoke.sh",
+    "soak:native-opcache": "bash scripts/run_native_opcache_soak.sh",
+    "gate:release": "bash scripts/run_release_gate.sh"
+  }
+}

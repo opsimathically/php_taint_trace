@@ -1,0 +1,21 @@
+{
+  "scenario_id": "phase_additional_ssrf_curl_setopt_array_confirmed",
+  "corpus_phase": "additional_sinks_v1",
+  "category": "ssrf",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/ssrf_curl_setopt_array?url=http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi",
+  "payload_plan": {
+    "target_query_param": "url"
+  },
+  "requires_extensions": [
+    "curl"
+  ],
+  "requires_functions": [
+    "curl_init",
+    "curl_setopt_array",
+    "curl_exec"
+  ]
+}

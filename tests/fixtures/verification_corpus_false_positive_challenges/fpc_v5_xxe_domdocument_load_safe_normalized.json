@@ -1,0 +1,16 @@
+{
+  "scenario_id": "fpc_v5_xxe_domdocument_load_safe_normalized",
+  "corpus_phase": "false_positive_challenge_v5",
+  "category": "xxe",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_XXE_WEAK_DIFFERENTIAL"
+  ],
+  "endpoint": "/xxe_safe?sink=dom_load&xml=%3C!DOCTYPE%20root%20%5B%3C!ENTITY%20xxe%20SYSTEM%20%22http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi%22%3E%5D%3E%3Croot%3E%26xxe%3B%3C%2Froot%3E",
+  "payload_plan": {
+    "target_query_param": "xml"
+  }
+}

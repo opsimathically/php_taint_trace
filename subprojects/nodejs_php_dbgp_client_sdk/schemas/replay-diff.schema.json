@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Replay Diff Artifact",
+  "type": "object",
+  "required": ["ok", "comparePhase", "summary"],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "comparePhase": {
+      "type": "string",
+      "enum": ["pre", "post", "post_reset"]
+    },
+    "summary": {
+      "type": "object",
+      "required": ["total", "driftDetected", "stable", "entries"],
+      "properties": {
+        "total": { "type": "integer", "minimum": 0 },
+        "driftDetected": { "type": "integer", "minimum": 0 },
+        "stable": { "type": "integer", "minimum": 0 },
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["variationId", "comparePhase", "snapshot", "expressions", "violations", "driftDetected"],
+            "properties": {
+              "variationId": { "type": "string" },
+              "comparePhase": {
+                "type": "string",
+                "enum": ["pre", "post", "post_reset"]
+              },
+              "snapshot": {
+                "type": "object",
+                "required": ["drifted", "allowed"],
+                "properties": {
+                  "baselineHash": { "type": "string" },
+                  "compareHash": { "type": "string" },
+                  "drifted": { "type": "boolean" },
+                  "allowed": { "type": "boolean" }
+                }
+              },
+              "expressions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["expression", "drifted", "allowed"],
+                  "properties": {
+                    "expression": { "type": "string" },
+                    "baseline": { "type": "string" },
+                    "current": { "type": "string" },
+                    "drifted": { "type": "boolean" },
+                    "allowed": { "type": "boolean" }
+                  }
+                }
+              },
+              "violations": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "driftDetected": { "type": "boolean" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

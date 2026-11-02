@@ -1,0 +1,9 @@
+{
+  "modules": [
+    { "module": "calendar", "git_url": "https://github.com/kolab-roundcube-plugins/calendar.git", "branch": "master", "target": "plugins/calendar" },
+    { "module": "tasklist", "git_url": "https://github.com/kolab-roundcube-plugins/tasklist.git", "branch": "master", "target": "plugins/tasklist" },
+    { "module": "contextmenu", "git_url": "https://github.com/texxasrulez/contextmenu.git", "branch": "master", "target": "plugins/contextmenu" },
+    { "module": "carddav", "git_url": "https://github.com/mstilkerich/rcmcarddav.git", "branch": "master", "target": "plugins/carddav" },
+    { "module": "persistent_login", "git_url": "https://github.com/eaglepisce/roundcube-persistent_login.git", "branch": "master", "target": "plugins/persistent_login" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "runtime": {
+    "enabled": true,
+    "error_log": true,
+    "clear_after_flush": true,
+    "emit_candidates": false,
+    "enable_opcode_hooks": false,
+    "opcode_hook_profile": "safe",
+    "enable_verifier": false,
+    "verifier_runtime_dir": "/var/lib/php_taint_trace/verifier",
+    "verifier_replay_target": "local",
+
+    "reporting_backend": "webhook",
+    "reporting_webhook_url": "https://security.example.internal/php-taint-trace/events",
+    "reporting_webhook_timeout_ms": 3000,
+    "reporting_webhook_headers": {
+      "Content-Type": "application/json",
+      "X-PHP-Taint-Trace-Source": "runtime"
+    },
+    "reporting_webhook_hmac_secret_env": "PHP_TAINT_TRACE_WEBHOOK_HMAC_SECRET",
+    "reporting_webhook_fail_open": true
+  }
+}

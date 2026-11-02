@@ -1,0 +1,12 @@
+{
+  "scenario_id": "phase_d_xss_safe",
+  "category": "xss",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/xss_safe?name=%3Cscript%3Extanzi%3C%2Fscript%3E",
+  "payload_plan": {
+    "target_query_param": "name"
+  }
+}

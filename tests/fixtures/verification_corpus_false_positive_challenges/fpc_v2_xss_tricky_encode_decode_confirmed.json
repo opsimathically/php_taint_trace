@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_v2_xss_tricky_encode_decode_confirmed",
+  "corpus_phase": "false_positive_challenge_v2",
+  "category": "xss",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_XSS_CONTEXT_CONFIRMED"
+  ],
+  "endpoint": "/xss_tricky_encode_decode_confirmed?name=%3Cscript%3Extanzi%3C%2Fscript%3E",
+  "payload_plan": {
+    "target_query_param": "name"
+  }
+}
+

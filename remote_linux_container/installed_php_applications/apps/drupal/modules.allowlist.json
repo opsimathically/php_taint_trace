@@ -1,0 +1,14 @@
+{
+  "modules": [
+    { "slug": "token", "package": "drupal/token" },
+    { "slug": "pathauto", "package": "drupal/pathauto" },
+    { "slug": "admin_toolbar", "package": "drupal/admin_toolbar" },
+    { "slug": "redirect", "package": "drupal/redirect" },
+    { "slug": "metatag", "package": "drupal/metatag" },
+    { "slug": "xmlsitemap", "package": "drupal/xmlsitemap" },
+    { "slug": "captcha", "package": "drupal/captcha" },
+    { "slug": "devel", "package": "drupal/devel" },
+    { "slug": "webform", "package": "drupal/webform" },
+    { "slug": "views_bulk_operations", "package": "drupal/views_bulk_operations" }
+  ]
+}

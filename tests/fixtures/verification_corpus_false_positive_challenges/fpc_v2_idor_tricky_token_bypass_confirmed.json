@@ -1,0 +1,20 @@
+{
+  "scenario_id": "fpc_v2_idor_tricky_token_bypass_confirmed",
+  "corpus_phase": "false_positive_challenge_v2",
+  "category": "idor",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_IDOR_DIFFERENTIAL_CONFIRMED"
+  ],
+  "endpoint": "/idor_tricky_token_bypass_confirmed?resource_id=42&actor_id=1043&mode=vuln",
+  "payload_plan": {
+    "target_query_param": "resource_id",
+    "idor_resource_param": "resource_id",
+    "idor_actor_param": "actor_id",
+    "idor_mode_param": "mode"
+  }
+}
+

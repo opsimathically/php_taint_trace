@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "advanced-pack", "type": "reference", "source_url": "https://www.espocrm.com/extensions/advanced-pack/" },
+    { "name": "mailchimp-integration", "type": "reference", "source_url": "https://www.espocrm.com/extensions/mailchimp/" },
+    { "name": "google-integration", "type": "reference", "source_url": "https://www.espocrm.com/extensions/google/" }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_sqli_pg_query_prepared_safe",
+  "corpus_phase": "additional_sinks_v1",
+  "category": "sqli",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/sqli_pg_query_prepared_safe?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  }
+}

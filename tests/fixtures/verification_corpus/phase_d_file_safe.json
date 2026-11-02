@@ -1,0 +1,12 @@
+{
+  "scenario_id": "phase_d_file_safe",
+  "category": "file",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/file_safe?path=%2Fetc%2Fhostname",
+  "payload_plan": {
+    "target_query_param": "path"
+  }
+}

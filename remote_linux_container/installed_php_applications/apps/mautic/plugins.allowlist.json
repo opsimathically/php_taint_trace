@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    {
+      "name": "mautic-example-plugin-one",
+      "source": "git",
+      "url": "https://github.com/mautic/plugin-helloworld.git",
+      "branch": "main",
+      "type": "integration"
+    },
+    {
+      "name": "mautic-example-plugin-two",
+      "source": "git",
+      "url": "https://github.com/mautic/plugin-citrix.git",
+      "branch": "master",
+      "type": "integration"
+    },
+    {
+      "name": "mautic-example-plugin-three",
+      "source": "git",
+      "url": "https://github.com/mautic/plugin-gmail.git",
+      "branch": "master",
+      "type": "integration"
+    }
+  ]
+}

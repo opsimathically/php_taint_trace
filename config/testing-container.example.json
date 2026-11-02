@@ -1,0 +1,10 @@
+{
+  "lab.example.invalid": {
+    "ipv4": "192.0.2.10",
+    "hostname": "lab.example.invalid",
+    "ssh_username": "operator",
+    "ssh_password": "REPLACE_WITH_EXTERNAL_OPERATOR_SECRET",
+    "sudopassword": "REPLACE_WITH_EXTERNAL_OPERATOR_SECRET",
+    "purpose": "Synthetic authorized test-lab profile"
+  }
+}

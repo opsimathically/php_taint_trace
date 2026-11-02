@@ -1,0 +1,122 @@
+{
+  "ok": true,
+  "rounds": 2,
+  "totalRuns": 4,
+  "stabilityReport": {
+    "rounds": 2,
+    "totalSamples": 4,
+    "overallStabilityScore": 1,
+    "variationScores": [
+      {
+        "variationId": "v1",
+        "samples": 2,
+        "stableSamples": 2,
+        "driftSamples": 0,
+        "errorSamples": 0,
+        "stabilityScore": 1
+      },
+      {
+        "variationId": "v2",
+        "samples": 2,
+        "stableSamples": 2,
+        "driftSamples": 0,
+        "errorSamples": 0,
+        "stabilityScore": 1
+      }
+    ]
+  },
+  "data": [
+    {
+      "variation": { "id": "v1" },
+      "result": {
+        "variation": { "id": "v1" },
+        "evalResults": {},
+        "errors": [],
+        "driftDetected": false
+      },
+      "sessionId": "session-1-1"
+    },
+    {
+      "variation": { "id": "v2" },
+      "result": {
+        "variation": { "id": "v2" },
+        "evalResults": {},
+        "errors": [],
+        "driftDetected": false
+      },
+      "sessionId": "session-1-2"
+    },
+    {
+      "variation": { "id": "v1" },
+      "result": {
+        "variation": { "id": "v1" },
+        "evalResults": {},
+        "errors": [],
+        "driftDetected": false
+      },
+      "sessionId": "session-2-1"
+    },
+    {
+      "variation": { "id": "v2" },
+      "result": {
+        "variation": { "id": "v2" },
+        "evalResults": {},
+        "errors": [],
+        "driftDetected": false
+      },
+      "sessionId": "session-2-2"
+    }
+  ],
+  "roundResults": [
+    {
+      "round": 1,
+      "results": [
+        {
+          "variation": { "id": "v1" },
+          "result": {
+            "variation": { "id": "v1" },
+            "evalResults": {},
+            "errors": [],
+            "driftDetected": false
+          },
+          "sessionId": "session-1-1"
+        },
+        {
+          "variation": { "id": "v2" },
+          "result": {
+            "variation": { "id": "v2" },
+            "evalResults": {},
+            "errors": [],
+            "driftDetected": false
+          },
+          "sessionId": "session-1-2"
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "results": [
+        {
+          "variation": { "id": "v1" },
+          "result": {
+            "variation": { "id": "v1" },
+            "evalResults": {},
+            "errors": [],
+            "driftDetected": false
+          },
+          "sessionId": "session-2-1"
+        },
+        {
+          "variation": { "id": "v2" },
+          "result": {
+            "variation": { "id": "v2" },
+            "evalResults": {},
+            "errors": [],
+            "driftDetected": false
+          },
+          "sessionId": "session-2-2"
+        }
+      ]
+    }
+  ]
+}

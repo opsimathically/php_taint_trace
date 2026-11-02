@@ -1,0 +1,22 @@
+{
+  "scenario_id": "phase_additional_xxe_domdocument_loadxml_confirmed",
+  "corpus_phase": "additional_sinks_v7",
+  "category": "xxe",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/xxe?sink=dom_loadxml&xml=%3C!DOCTYPE%20root%20%5B%3C!ENTITY%20xxe%20SYSTEM%20%22http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi%22%3E%5D%3E%3Croot%3E%26xxe%3B%3C%2Froot%3E",
+  "payload_plan": {
+    "target_query_param": "xml"
+  },
+  "requires_extensions": [
+    "dom"
+  ],
+  "requires_classes": [
+    "DOMDocument"
+  ],
+  "requires_methods": [
+    "DOMDocument::loadXML"
+  ]
+}

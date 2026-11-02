@@ -1,0 +1,16 @@
+{
+  "scenario_id": "fpc_v3_ssrf_stream_socket_client_tricky_confirmed",
+  "corpus_phase": "false_positive_challenge_v3",
+  "category": "ssrf",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_SSRF_CALLBACK_CONFIRMED"
+  ],
+  "endpoint": "/ssrf_stream_socket_client?url=http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi",
+  "payload_plan": {
+    "target_query_param": "url"
+  }
+}

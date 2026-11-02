@@ -1,0 +1,16 @@
+{
+  "scenario_id": "fpc_v17_rce_include_or_eval_tricky_confirmed",
+  "corpus_phase": "false_positive_challenge_v17",
+  "category": "rce",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_RCE_NONCE_CONFIRMED"
+  ],
+  "endpoint": "/rce_eval_tricky_confirmed?cmd=echo%20%22safe%22%3B",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}

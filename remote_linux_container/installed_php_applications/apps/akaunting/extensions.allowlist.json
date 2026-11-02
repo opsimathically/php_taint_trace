@@ -1,0 +1,6 @@
+{
+  "extensions": [
+    { "name": "spatie/laravel-permission", "version_constraint": "*", "type": "composer-package" },
+    { "name": "barryvdh/laravel-dompdf", "version_constraint": "*", "type": "composer-package" }
+  ]
+}

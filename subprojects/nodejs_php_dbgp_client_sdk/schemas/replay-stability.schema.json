@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Replay Stability Artifact",
+  "type": "object",
+  "required": ["ok", "minOverall", "minVariation", "thresholdsPassed", "failingVariations", "report"],
+  "properties": {
+    "ok": { "type": "boolean" },
+    "minOverall": { "type": "number", "minimum": 0, "maximum": 1 },
+    "minVariation": { "type": "number", "minimum": 0, "maximum": 1 },
+    "thresholdsPassed": { "type": "boolean" },
+    "failingVariations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["variationId", "stabilityScore"],
+        "properties": {
+          "variationId": { "type": "string" },
+          "stabilityScore": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "report": {
+      "type": "object",
+      "required": ["rounds", "totalSamples", "overallStabilityScore", "variationScores"],
+      "properties": {
+        "rounds": { "type": "integer", "minimum": 1 },
+        "totalSamples": { "type": "integer", "minimum": 0 },
+        "overallStabilityScore": { "type": "number", "minimum": 0, "maximum": 1 },
+        "variationScores": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["variationId", "samples", "stableSamples", "driftSamples", "errorSamples", "stabilityScore"],
+            "properties": {
+              "variationId": { "type": "string" },
+              "samples": { "type": "integer", "minimum": 0 },
+              "stableSamples": { "type": "integer", "minimum": 0 },
+              "driftSamples": { "type": "integer", "minimum": 0 },
+              "errorSamples": { "type": "integer", "minimum": 0 },
+              "stabilityScore": { "type": "number", "minimum": 0, "maximum": 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+}

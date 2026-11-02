@@ -1,0 +1,12 @@
+{
+  "scenario_id": "phase_d_rce_confirmed",
+  "category": "rce",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/rce?cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}

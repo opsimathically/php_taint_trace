@@ -1,0 +1,24 @@
+{
+  "scenario_id": "phase_additional_ssrf_curl_multi_setopt_array_safe",
+  "corpus_phase": "additional_sinks_v9",
+  "category": "ssrf",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/ssrf_curl_multi_setopt_array_safe?url=http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi",
+  "payload_plan": {
+    "target_query_param": "url"
+  },
+  "requires_extensions": [
+    "curl"
+  ],
+  "requires_functions": [
+    "curl_init",
+    "curl_setopt_array",
+    "curl_multi_init",
+    "curl_multi_add_handle",
+    "curl_multi_exec",
+    "curl_multi_getcontent"
+  ]
+}

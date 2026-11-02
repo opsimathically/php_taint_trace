@@ -1,0 +1,10 @@
+{
+  "composer_packages": [
+    { "package": "yireo/magento2-replace-tools", "constraint": "*" },
+    { "package": "yireo/magento2-extensionchecker", "constraint": "*" },
+    { "package": "integer-net/magento2-reviews", "constraint": "*" }
+  ],
+  "git_modules": [
+    { "name": "Mage2tv_MagentoCacheClean", "repo": "https://github.com/mage2tv/magento-cache-clean.git", "branch": "main", "target": "app/code/Mage2tv/MagentoCacheClean" }
+  ]
+}

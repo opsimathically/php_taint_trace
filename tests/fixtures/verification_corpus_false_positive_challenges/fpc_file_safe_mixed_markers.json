@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_file_safe_mixed_markers",
+  "corpus_phase": "false_positive_challenge_v1",
+  "category": "file",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_FILE_NORMALIZATION_AMBIGUITY"
+  ],
+  "endpoint": "/file_fp_mixed?path=%2Fetc%2Fhostname",
+  "payload_plan": {
+    "target_query_param": "path"
+  }
+}
+

@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "source-integration", "url": "https://github.com/mantisbt-plugins/source-integration.git", "branch": "master", "type": "git-plugin" },
+    { "name": "tasks", "url": "https://github.com/mantisbt-plugins/Tasks.git", "branch": "master", "type": "git-plugin" },
+    { "name": "linked-custom-fields", "url": "https://github.com/mantisbt-plugins/LinkedCustomFields.git", "branch": "master", "type": "git-plugin" }
+  ]
+}

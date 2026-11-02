@@ -1,0 +1,12 @@
+{
+  "scenario_id": "phase_d_sqli_safe",
+  "category": "sqli",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/sqli_safe?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  }
+}

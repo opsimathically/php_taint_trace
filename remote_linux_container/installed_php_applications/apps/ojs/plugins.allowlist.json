@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "orcidProfile", "url": "https://github.com/pkp/orcidProfile.git", "branch": "stable-3_5_0", "type": "git-plugin" },
+    { "name": "crossrefReferenceLinking", "url": "https://github.com/pkp/crossrefReferenceLinking.git", "branch": "stable-3_5_0", "type": "git-plugin" },
+    { "name": "googleAnalytics", "url": "https://github.com/pkp/googleAnalytics.git", "branch": "stable-3_5_0", "type": "git-plugin" }
+  ]
+}

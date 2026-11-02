@@ -1,0 +1,22 @@
+{
+  "scenario_id": "phase_additional_sqli_sqlite3_querysingle_safe",
+  "corpus_phase": "additional_sinks_v15",
+  "category": "sqli",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/sqli_sqlite3_querysingle_safe?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_extensions": [
+    "sqlite3"
+  ],
+  "requires_classes": [
+    "SQLite3"
+  ],
+  "requires_methods": [
+    "SQLite3::querySingle"
+  ]
+}

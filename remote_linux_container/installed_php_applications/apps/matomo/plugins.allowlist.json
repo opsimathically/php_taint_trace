@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    { "plugin": "CustomDimensions" },
+    { "plugin": "CustomVariables" },
+    { "plugin": "TagManager" },
+    { "plugin": "FormAnalytics" },
+    { "plugin": "HeatmapSessionRecording" },
+    { "plugin": "MediaAnalytics" }
+  ]
+}

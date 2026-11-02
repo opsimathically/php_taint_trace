@@ -1,0 +1,16 @@
+{
+  "scenario_id": "fpc_v3_rce_mail_arg5_safe_wrong_arg",
+  "corpus_phase": "false_positive_challenge_v3",
+  "category": "rce",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_RCE_WEAK_DIFFERENTIAL"
+  ],
+  "endpoint": "/rce_mail_arg5_vuln?subject=status&cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "subject"
+  }
+}

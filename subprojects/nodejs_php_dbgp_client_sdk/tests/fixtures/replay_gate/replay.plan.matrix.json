@@ -1,0 +1,14 @@
+{
+  "variations": [
+    {
+      "id": "base",
+      "evalExpressions": ["$cmd"]
+    }
+  ],
+  "matrix": [
+    {
+      "propertyName": "$cmd",
+      "values": ["id", "whoami"]
+    }
+  ]
+}

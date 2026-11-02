@@ -1,0 +1,20 @@
+{
+  "scenario_id": "fpc_v14_sqli_mysqli_execute_query_tricky_confirmed",
+  "corpus_phase": "false_positive_challenge_v14",
+  "category": "sqli",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_SQLI_UNION_CONFIRMED",
+    "VERIFIER_SQLI_DIRECT_QUERY_CONFIRMED"
+  ],
+  "endpoint": "/sqli_mysqli_execute_query_tricky_confirmed?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_functions": [
+    "mysqli_execute_query"
+  ]
+}

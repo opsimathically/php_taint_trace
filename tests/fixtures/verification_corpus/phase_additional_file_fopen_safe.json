@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_file_fopen_safe",
+  "corpus_phase": "additional_sinks_v16",
+  "category": "file",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/file_fopen_safe?path=%2Fetc%2Fhostname",
+  "payload_plan": {
+    "target_query_param": "path"
+  }
+}

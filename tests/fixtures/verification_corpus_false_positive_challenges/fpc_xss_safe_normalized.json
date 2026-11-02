@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_xss_safe_normalized",
+  "corpus_phase": "false_positive_challenge_v1",
+  "category": "xss",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_XSS_NORMALIZATION_AMBIGUITY"
+  ],
+  "endpoint": "/xss_fp_normalized?name=%3Cscript%3Extanzi%3C%2Fscript%3E",
+  "payload_plan": {
+    "target_query_param": "name"
+  }
+}
+

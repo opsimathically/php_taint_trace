@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "oe-module-faxsms", "type": "git-zip", "source_url": "https://github.com/openemr/oe-module-faxsms/archive/refs/heads/master.zip" },
+    { "name": "oe-module-zend_modules", "type": "git-zip", "source_url": "https://github.com/openemr/oe-module-zend_modules/archive/refs/heads/master.zip" },
+    { "name": "oe-module-cqm", "type": "git-zip", "source_url": "https://github.com/openemr/oe-module-cqm/archive/refs/heads/master.zip" }
+  ]
+}

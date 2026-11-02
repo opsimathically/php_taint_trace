@@ -1,0 +1,16 @@
+{
+  "scenario_id": "phase_additional_sqli_mysqli_execute_query_safe",
+  "corpus_phase": "additional_sinks_v14",
+  "category": "sqli",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/sqli_mysqli_execute_query_safe?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_functions": [
+    "mysqli_execute_query"
+  ]
+}

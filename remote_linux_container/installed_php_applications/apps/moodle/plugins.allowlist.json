@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    { "component": "mod_attendance", "git_url": "https://github.com/danmarsden/moodle-mod_attendance.git", "branch": "master" },
+    { "component": "mod_checklist", "git_url": "https://github.com/davosmith/moodle-mod_checklist.git", "branch": "master" },
+    { "component": "mod_publication", "git_url": "https://github.com/FMCorz/moodle-mod_publication.git", "branch": "master" },
+    { "component": "block_xp", "git_url": "https://github.com/FMCorz/moodle-block_xp.git", "branch": "master" },
+    { "component": "local_mailtest", "git_url": "https://github.com/moodlehq/moodle-local_mailtest.git", "branch": "master" },
+    { "component": "theme_moove", "git_url": "https://github.com/willianmano/moodle-theme_moove.git", "branch": "master" },
+    { "component": "enrol_autoenrol", "git_url": "https://github.com/bmbrands/moodle-enrol_autoenrol.git", "branch": "master" },
+    { "component": "tool_certificate", "git_url": "https://github.com/mdjnelson/moodle-tool_certificate.git", "branch": "master" }
+  ]
+}

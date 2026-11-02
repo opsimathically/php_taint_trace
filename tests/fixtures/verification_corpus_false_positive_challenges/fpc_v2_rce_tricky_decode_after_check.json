@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_v2_rce_tricky_decode_after_check",
+  "corpus_phase": "false_positive_challenge_v2",
+  "category": "rce",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_RCE_NONCE_CONFIRMED"
+  ],
+  "endpoint": "/rce_tricky_decode_after_check?cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}
+

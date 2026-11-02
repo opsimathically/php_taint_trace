@@ -1,0 +1,14 @@
+{
+  "scenario_id": "fpc_v12_ssrf_get_headers_safe_guarded",
+  "corpus_phase": "false_positive_challenge_v12",
+  "category": "ssrf",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/ssrf_get_headers_safe_guarded?url=http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi",
+  "payload_plan": {
+    "target_query_param": "url"
+  },
+  "notes": "Strict allowlist guard keeps header fetch path non-exploitable for verifier replay mutations."
+}

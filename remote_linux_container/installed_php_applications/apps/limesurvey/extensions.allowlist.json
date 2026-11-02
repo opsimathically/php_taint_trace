@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "Authdb", "url": "https://github.com/LimeSurvey/LimeSurvey.git", "branch": "master", "type": "reference" },
+    { "name": "AuditLog", "url": "https://github.com/LimeSurvey/LimeSurvey.git", "branch": "master", "type": "reference" },
+    { "name": "ExportR", "url": "https://github.com/LimeSurvey/LimeSurvey.git", "branch": "master", "type": "reference" }
+  ]
+}

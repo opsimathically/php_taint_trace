@@ -1,0 +1,9 @@
+{
+  "plugins": [
+    { "plugin": "accounts", "url": "https://github.com/pluginsGLPI/accounts.git", "branch": "master" },
+    { "plugin": "datainjection", "url": "https://github.com/pluginsGLPI/datainjection.git", "branch": "master" },
+    { "plugin": "fields", "url": "https://github.com/pluginsGLPI/fields.git", "branch": "master" },
+    { "plugin": "formcreator", "url": "https://github.com/pluginsGLPI/formcreator.git", "branch": "master" },
+    { "plugin": "behaviors", "url": "https://github.com/pluginsGLPI/behaviors.git", "branch": "master" }
+  ]
+}

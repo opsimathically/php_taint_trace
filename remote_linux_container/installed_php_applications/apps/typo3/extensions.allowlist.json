@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "georgringer/news", "version_constraint": "*", "type": "content" },
+    { "name": "friendsoftypo3/tt-address", "version_constraint": "*", "type": "content" },
+    { "name": "in2code/powermail", "version_constraint": "*", "type": "forms" }
+  ]
+}

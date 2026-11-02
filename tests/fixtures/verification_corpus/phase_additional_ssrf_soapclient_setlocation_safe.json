@@ -1,0 +1,22 @@
+{
+  "scenario_id": "phase_additional_ssrf_soapclient_setlocation_safe",
+  "corpus_phase": "additional_sinks_v6",
+  "category": "ssrf",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/ssrf_soapclient_setlocation_safe?url=http%3A%2F%2F127.0.0.1%3A18081%2F%3Fname%3Dxtanzi",
+  "payload_plan": {
+    "target_query_param": "url"
+  },
+  "requires_extensions": [
+    "soap"
+  ],
+  "requires_classes": [
+    "SoapClient"
+  ],
+  "requires_methods": [
+    "SoapClient::__setLocation"
+  ]
+}

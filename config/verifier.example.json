@@ -1,0 +1,17 @@
+{
+  "verifier": {
+    "runtime_dir": "/var/lib/php_taint_trace/verifier",
+    "replay_target": "local",
+    "local_base_url": "http://127.0.0.1:8080",
+    "callback_base_url": "",
+    "remote_host": "127.0.0.1",
+    "batch_size": 200,
+    "max_attempts": 2,
+    "stability_rounds": 2,
+    "claim_ttl_seconds": 300,
+    "xss_browser_enabled": false,
+    "xss_browser_enforce": false,
+    "xss_browser_timeout_ms": 8000,
+    "xss_browser_driver_cmd": "node /opt/php_taint_trace/rewrite/scripts/xss_browser_probe_driver_playwright.mjs --url {url} --nonce {nonce} --timeout-ms {timeout_ms}"
+  }
+}

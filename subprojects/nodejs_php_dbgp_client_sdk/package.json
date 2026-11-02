@@ -1,0 +1,59 @@
+{
+  "name": "@internal/nodejs-php-dbgp-client-sdk",
+  "version": "0.1.0",
+  "description": "Node.js/TypeScript SDK for PHP Xdebug DBGp client/listener and debug-session analysis.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "php-dbgp-sdk": "dist/cli.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsup",
+    "clean": "rm -rf dist .vitest-cache",
+    "dev:cli": "tsx src/cli.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "npm run typecheck",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:watch": "vitest",
+    "test:remote:container": "tsx scripts/remote_xdebug_smoke.ts --config \"${PHP_TAINT_TRACE_TEST_CONFIG:?Set an external operator configuration path}\" --profile \"${PHP_TAINT_TRACE_TEST_HOST_LABEL:-lab.example.invalid}\"",
+    "gate:replay-fixtures": "tsx scripts/run_replay_fixture_gates.ts",
+    "replay:ci": "tsx src/cli.ts replay-ci"
+  },
+  "keywords": [
+    "php",
+    "xdebug",
+    "dbgp",
+    "debugger",
+    "sdk",
+    "security"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "5.6.3",
+    "vitest": "^2.1.8"
+  }
+}

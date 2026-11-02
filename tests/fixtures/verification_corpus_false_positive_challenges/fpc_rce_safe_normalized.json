@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_rce_safe_normalized",
+  "corpus_phase": "false_positive_challenge_v1",
+  "category": "rce",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_RCE_NORMALIZATION_AMBIGUITY"
+  ],
+  "endpoint": "/rce_fp_normalized?cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}
+

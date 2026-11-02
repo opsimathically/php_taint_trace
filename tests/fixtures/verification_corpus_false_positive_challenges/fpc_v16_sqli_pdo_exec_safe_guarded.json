@@ -1,0 +1,23 @@
+{
+  "scenario_id": "fpc_v16_sqli_pdo_exec_safe_guarded",
+  "corpus_phase": "false_positive_challenge_v16",
+  "category": "sqli",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "endpoint": "/sqli_pdo_exec_safe_guarded?q=1%20UNION%20SELECT%20%27xtanzi%27--",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_extensions": [
+    "pdo",
+    "pdo_sqlite"
+  ],
+  "requires_classes": [
+    "PDO"
+  ],
+  "requires_methods": [
+    "PDO::exec"
+  ]
+}

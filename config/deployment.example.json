@@ -1,0 +1,17 @@
+{
+  "deployment": {
+    "host_label": "lab.example.invalid",
+    "remote_root": "/opt/php_taint_trace_vuln_lab",
+    "extension_profile": "extended_all",
+    "runtime_config_path": "/etc/php_taint_trace/runtime.json",
+    "verifier_config_path": "/etc/php_taint_trace/verifier.json",
+    "reporting_mode": "webhook"
+  },
+  "hosts": {
+    "lab.example.invalid": {
+      "ipv4": "192.0.2.10",
+      "hostname": "lab.example.invalid",
+      "ssh_username": "operator"
+    }
+  }
+}

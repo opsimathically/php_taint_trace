@@ -1,0 +1,15 @@
+{
+  "scenario_id": "phase_d_idor_confirmed",
+  "category": "idor",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/idor?resource_id=42&actor_id=1043&mode=vuln",
+  "payload_plan": {
+    "target_query_param": "resource_id",
+    "idor_resource_param": "resource_id",
+    "idor_actor_param": "actor_id",
+    "idor_mode_param": "mode"
+  }
+}

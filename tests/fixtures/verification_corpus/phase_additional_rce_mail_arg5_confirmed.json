@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_rce_mail_arg5_confirmed",
+  "corpus_phase": "additional_sinks_v1",
+  "category": "rce",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/rce_mail_arg5_vuln?subject=status&cmd=echo%20xtanzi",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}

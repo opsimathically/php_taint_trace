@@ -1,0 +1,22 @@
+{
+  "extensions": [
+    {
+      "name": "bookstack-devops",
+      "url": "https://github.com/BookStackApp/devops.git",
+      "branch": "main",
+      "type": "utility"
+    },
+    {
+      "name": "bookstack-api-scripts",
+      "url": "https://github.com/BookStackApp/api-scripts.git",
+      "branch": "main",
+      "type": "integration"
+    },
+    {
+      "name": "bookstack-docker-helper",
+      "url": "https://github.com/linuxserver/docker-bookstack.git",
+      "branch": "master",
+      "type": "reference"
+    }
+  ]
+}

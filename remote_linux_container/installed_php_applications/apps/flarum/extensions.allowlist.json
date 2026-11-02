@@ -1,0 +1,7 @@
+{
+  "extensions": [
+    { "name": "flarum/tags", "version_constraint": "*", "type": "composer-package" },
+    { "name": "flarum/mentions", "version_constraint": "*", "type": "composer-package" },
+    { "name": "fof/byobu", "version_constraint": "*", "type": "composer-package" }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "scenario_id": "phase_additional_sqli_pdo_query_confirmed",
+  "corpus_phase": "additional_sinks_v15",
+  "category": "sqli",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/sqli_pdo_query?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_extensions": [
+    "pdo",
+    "pdo_sqlite"
+  ],
+  "requires_classes": [
+    "PDO"
+  ],
+  "requires_methods": [
+    "PDO::query"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "scenario_id": "fpc_v2_file_tricky_basename_confirmed",
+  "corpus_phase": "false_positive_challenge_v2",
+  "category": "file",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "expected_reason_codes_any": [
+    "VERIFIER_FILE_DIFFERENTIAL_CONFIRMED"
+  ],
+  "endpoint": "/file_tricky_basename_confirmed?path=%2Fetc%2Fhostname",
+  "payload_plan": {
+    "target_query_param": "path"
+  }
+}
+

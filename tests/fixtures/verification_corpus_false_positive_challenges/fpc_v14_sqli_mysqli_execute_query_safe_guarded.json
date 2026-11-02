@@ -1,0 +1,19 @@
+{
+  "scenario_id": "fpc_v14_sqli_mysqli_execute_query_safe_guarded",
+  "corpus_phase": "false_positive_challenge_v14",
+  "category": "sqli",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_SQLI_WEAK_DIFFERENTIAL"
+  ],
+  "endpoint": "/sqli_mysqli_execute_query_safe_guarded?q=1",
+  "payload_plan": {
+    "target_query_param": "q"
+  },
+  "requires_functions": [
+    "mysqli_execute_query"
+  ]
+}

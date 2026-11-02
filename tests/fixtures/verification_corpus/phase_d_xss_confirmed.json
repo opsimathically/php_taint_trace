@@ -1,0 +1,12 @@
+{
+  "scenario_id": "phase_d_xss_confirmed",
+  "category": "xss",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/xss?name=%3Cscript%3Extanzi%3C%2Fscript%3E",
+  "payload_plan": {
+    "target_query_param": "name"
+  }
+}

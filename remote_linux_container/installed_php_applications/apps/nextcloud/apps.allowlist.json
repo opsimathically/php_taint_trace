@@ -1,0 +1,14 @@
+{
+  "apps": [
+    { "app_id": "calendar" },
+    { "app_id": "contacts" },
+    { "app_id": "deck" },
+    { "app_id": "tasks" },
+    { "app_id": "notes" },
+    { "app_id": "mail" },
+    { "app_id": "news" },
+    { "app_id": "groupfolders" },
+    { "app_id": "spreed" },
+    { "app_id": "richdocuments" }
+  ]
+}

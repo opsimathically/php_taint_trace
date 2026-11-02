@@ -1,0 +1,13 @@
+{
+  "scenario_id": "phase_additional_rce_include_or_eval_confirmed",
+  "corpus_phase": "additional_sinks_v17",
+  "category": "rce",
+  "scenario_kind": "vulnerable",
+  "expected_confirmed": true,
+  "expected_outcome": "confirmed",
+  "expected_decision_tier": "confirmed",
+  "endpoint": "/rce_eval?cmd=echo%20%22safe%22%3B",
+  "payload_plan": {
+    "target_query_param": "cmd"
+  }
+}

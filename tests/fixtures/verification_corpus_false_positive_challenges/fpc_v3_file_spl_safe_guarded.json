@@ -1,0 +1,16 @@
+{
+  "scenario_id": "fpc_v3_file_spl_safe_guarded",
+  "corpus_phase": "false_positive_challenge_v3",
+  "category": "file",
+  "scenario_kind": "safe",
+  "expected_confirmed": false,
+  "expected_outcome": "not_confirmed",
+  "expected_decision_tier": "invalid",
+  "expected_reason_codes_any": [
+    "VERIFIER_FILE_AMBIGUOUS_CONTROL_SIGNAL"
+  ],
+  "endpoint": "/file_spl_safe?path=%2Fetc%2Fhostname",
+  "payload_plan": {
+    "target_query_param": "path"
+  }
+}

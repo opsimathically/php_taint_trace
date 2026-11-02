@@ -1,0 +1,64 @@
+{
+  "extensions": [
+    {
+      "slug": "akeebabackup",
+      "name": "Akeeba Backup Core",
+      "package_url": "https://www.akeeba.com/download/akeeba-backup/9-9-5/akeeba-backup-core-9-9-5.zip"
+    },
+    {
+      "slug": "admintools",
+      "name": "Admin Tools Core",
+      "package_url": "https://www.akeeba.com/download/admintools/7-5-3/admin-tools-core-7-5-3.zip"
+    },
+    {
+      "slug": "aclmanager",
+      "name": "ACL Manager",
+      "package_url": "https://github.com/ACLManager/aclmanager/releases/download/3.0.6/pkg_aclmanager-3.0.6.zip"
+    },
+    {
+      "slug": "jce",
+      "name": "JCE Editor",
+      "package_url": "https://www.joomlacontenteditor.net/downloads/editor/pro/download"
+    },
+    {
+      "slug": "rsfirewall",
+      "name": "RSFirewall",
+      "package_url": "https://www.rsjoomla.com/downloads/rsfirewall/rsfirewall.zip"
+    },
+    {
+      "slug": "aesirx_first_party_server_side_tag",
+      "name": "AesirX First-Party Server-Side Tag",
+      "package_url": "https://github.com/aesirxio/joomla-extension-aesirx-first-party-server-side-tag/releases/download/v1.2.1/pkg_aesirx_first_party_server_side_tag_v1.2.1.zip"
+    },
+    {
+      "slug": "aesirx_consent",
+      "name": "AesirX Consent",
+      "package_url": "https://github.com/aesirxio/joomla-extension-aesirx-consent/releases/download/v1.1.0/pkg_aesirx_consent_v1.1.0.zip"
+    },
+    {
+      "slug": "jsitemap",
+      "name": "JSitemap",
+      "package_url": "https://storejextensions.org/media/com_ars/repository/jsitemap.zip"
+    },
+    {
+      "slug": "convertforms",
+      "name": "Convert Forms",
+      "package_url": "https://www.tassos.gr/download/convert-forms"
+    },
+    {
+      "slug": "engagebox",
+      "name": "EngageBox",
+      "package_url": "https://www.tassos.gr/download/engagebox"
+    },
+    {
+      "slug": "sourcerer",
+      "name": "Sourcerer",
+      "package_url": "https://regularlabs.com/downloads/sourcerer"
+    },
+    {
+      "slug": "advancedmodulemanager",
+      "name": "Advanced Module Manager",
+      "package_url": "https://regularlabs.com/downloads/advancedmodulemanager"
+    }
+  ]
+}
